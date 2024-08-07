@@ -26,6 +26,7 @@ public class TokenManager {
                 System.out.println("Token is good to use.");
             }
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException("Abort !! Token generation failed.");
         }
         return access_token;
@@ -41,7 +42,7 @@ public class TokenManager {
         Response response = RestApi.postAccount(API + TOKEN, formParams);
 
         if (response.statusCode() != 200) {
-            throw new RuntimeException("Abort !! Token generation failed.");
+            throw new RuntimeException("Abort !! Token generation failed as status code not 200.");
         }
 
         return response;
