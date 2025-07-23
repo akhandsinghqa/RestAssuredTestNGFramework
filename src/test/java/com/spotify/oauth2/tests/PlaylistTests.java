@@ -10,7 +10,8 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static com.spotify.oauth2.api.StatusCode.*;
-import static com.spotify.oauth2.utils.FakerUtils.*;
+import static com.spotify.oauth2.utils.FakerUtils.generateDescription;
+import static com.spotify.oauth2.utils.FakerUtils.generateName;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
@@ -29,7 +30,7 @@ public class PlaylistTests extends BaseTest {
     }
 
     @Story("Get the Playlist")
-    @Link(name = "WebSite" , type = "my-link")
+    @Link(name = "WebSite", type = "my-link")
     @TmsLink("TMS-1234")
     @Issue("Issue-1234")
     @Description("This test case is failing due to public field assertion.")

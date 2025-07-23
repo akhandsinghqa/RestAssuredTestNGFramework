@@ -7,7 +7,8 @@ import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.spotify.oauth2.api.Route.*;
+import static com.spotify.oauth2.api.Route.API;
+import static com.spotify.oauth2.api.Route.TOKEN;
 
 public class TokenManager {
     private static String access_token;

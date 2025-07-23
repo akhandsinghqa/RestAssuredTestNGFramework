@@ -7,7 +7,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.jackson.Jacksonized;
 
-@Getter @Setter
+@Getter
+@Setter
 @Jacksonized
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)

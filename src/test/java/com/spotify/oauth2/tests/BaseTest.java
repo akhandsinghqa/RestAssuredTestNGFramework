@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 public class BaseTest {
 
     @BeforeMethod
-    public void beforeMethod(Method method){
+    public void beforeMethod(Method method) {
         System.out.println("Method Name : " + method.getName());
         System.out.println("Thread Id : " + Thread.currentThread().threadId());
     }
